@@ -7,344 +7,36 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="URL" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	
-    <link rel="canonical" href="URL" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+		
+    <link rel="canonical" href="### URL ###" />
 	
     <!-- Facebook Metadata -->
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:title" content="TITLE"/>
+    <meta property="og:title" content="### TITLE ###"/>
     <meta property="og:type" content="article">
-    <meta property="og:image" content="IMAGE" />
-    <meta property="og:description" content="DESC"/>
-    <meta property="og:url" content="URL">
+    <meta property="og:image" content="### IMAGE ###" />
+    <meta property="og:description" content="### DESC ###"/>
+    <meta property="og:url" content="### URL ###">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="...">
+    <meta name="twitter:creator" content="### NAME ###">
     <!-- Google+ Metadata -->
-    <meta itemprop="name" content="TITLE">
-    <meta itemprop="image" content="IMAGE">
-    <meta itemprop="description" content="DESC">
+    <meta itemprop="name" content="### TITLE ###">
+    <meta itemprop="image" content="### IMAGE ###">
+    <meta itemprop="description" content="### DESC ###">
 
-    <style>
-
-    /*------------------------------*\
-        Reset
-    \*------------------------------*/
-
-
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
-
-
-    html { line-height: 1; }
-
-    ol, ul { list-style: none; }
-
-    table { border-collapse: collapse; border-spacing: 0; }
-
-    caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-    q, blockquote { quotes: none; }
-    q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
-
-    a img { border: none; }
-
-    img { width: 100%; }
-
-    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
-
-    * html { font-size: 100%; }
-
-    html { font-size: 16px; line-height: 1.625em; font-family: Roboto, sans-serif;}
-
-    * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-    h1 {font-size: 2.25em; line-height: 115%; margin: 0.25em;}
-
-    h2 {font-size: 1.5em;  margin: 0.25em;}
-
-    ul.nav {padding: 1.55em 0;}
-
-    ul.nav li { display: inline-block; padding: 0 0.5em;}
-
-
-    /*------------------------------*\
-        Framework
-    \*------------------------------*/
-
-    .row, .column {
-    box-sizing: border-box;
-    }
-
-    .row:before, .row:after {
-    content: " ";
-    display: table;
-    }
-    .row:after {
-    clear: both;
-    }
-
-    .column {
-    position: relative;
-    float: left;
-    display:block;
-    }
-
-    .column + .column {
-    margin-left: 1.6%;
-    }
-
-
-    .column-1 {
-        width: 6.86666666667%;
-    }
-
-    .column-2 {
-        width: 15.3333333333%;
-    }
-
-    .column-3 {
-        width: 23.8%;
-    }
-
-    .column-4 {
-        width: 32.2666666667%;
-    }
-
-    .column-5 {
-        width: 40.7333333333%;
-    }
-
-    .column-6 {
-        width: 49.2%;
-    }
-
-    .column-7 {
-        width: 57.6666666667%;
-    }
-
-    .column-8 {
-        width: 66.1333333333%;
-    }
-
-    .column-9 {
-        width: 74.6%;
-    }
-
-    .column-10 {
-        width: 83.0666666667%;
-    }
-
-    .column-11 {
-        width: 91.5333333333%;
-    }
-
-    .column-12 {
-        width: 100%;
-    }
-
-
-
-
-    @media only screen and (max-width: 900px) {
-        .column-1,
-        .column-2,
-        .column-3,
-        .column-4,
-        .column-5,
-        .column-6,
-        .column-7,
-        .column-8,
-        .column-9,
-        .column-10,
-        .column-11,
-        .column-12 {
-            width: auto;
-            float: none;
-        }
-
-        .column + .column {
-            margin-left: 0;
-        }
-    }
-
-
-
-
-    /*------------------------------*\
-        Styling
-    \*------------------------------*/
-
-
-    body {
-        padding: 20px;
-    }
-
-    .column {
-        background: #ffffff;
-        border: 1px solid #eeeeee;
-        border-radius: 4px;
-        color: #464646;
-        padding: 5px;
-        min-height: 30px;
-        text-align: center;
-    }
-
-    .row {
-        margin-bottom: 10px;
-    }
-
-    .row:last-child {
-        margin-bottom: 1em;
-    }
-
-    .column .column {
-        color: #ffffff;
-        background: #464646;
-        border-color: #000000;
-    }
-
-    p.text-center {
-      font-size: 14px;
-      text-align: center;
-    }
-	p { 
-	  max-width: 600px;
-	  margin: 0 auto;  
-	  padding: 10px 30px;
-	  font-size: 1.2em;
-	  line-height: 120%;
-	  text-align:left;
-	  color: #464646;  
-	}
-	span.opener {
-	  font-weight:bold;
-	  font-size: 150%;
-	  display:inline-block;
-	  padding-top: 15px;
-	}
-	
-	a i {
-      font-size: 32px !important;
-      margin: 10px; 
-    }
-	
-	img { 
-	  margin: 0.5em auto 0 auto;
-	  height: auto;
-	}
-	
-
-    @media only screen and (max-width: 550px) {
-        .row {
-            margin-bottom: 0;
-        }
-        .column {
-            margin-bottom: 10px;
-        }
-        .row:last-child .column:last-child {
-            margin-bottom: 0;
-        }
-    }
-	
-    /*------------------------------*\
-        Accessibility Styles
-    \*------------------------------*/	
-	
-	/*Hidden from the eye, but accessible for screen-readers */
-    .readable {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip-path: rect(0, 0, 0, 0);
-      border: 0; 
-	  } 
-	  
-	a {
-	  color: inherit;
-      min-height: 44px;
-      min-width: 44px;
-
-	  }
-	  
-	a:hover {
-	  text-decoration:none;
-	  border-bottom:2px solid #ff0000;
-	}
-	  
-	/* NEVER EVER disable focus */
-	a:focus {
-	  border: 1px solid #0000ff;
-	  }
-	  
-	.basic {
-      display: block;
-      position: absolute;
-      top: -1000px;
-      left: -1000px; 
-	}
-    .basic:focus {
-        top: 0;
-        left: 0; 
-	}   
-    .header__skip {
-      background: #2084b8;
-      color: #fff;
-      display: block;
-      font-weight: bold;
-      height: 50px;
-      line-height: 40px;
-      margin-top: -80px;
-      overflow: hidden;
-      padding: 5px 0;
-      position: relative;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-align: center;
-      -webkit-transition: margin-top 0.2s ease-in-out;
-      transition: margin-top 0.2s ease-in-out; }
-    
-    .header__skip:focus {
-      color: #fff;
-      margin-top: 0; }
-    
-    .skip-nav-link {
-      position: absolute;
-      top: 0;
-      left: -10000px;
-      height: 1px;
-      width: 1px;
-      overflow: hidden; }
-    
-    .skip-nav-link:focus {
-      height: 20px;
-      width: 200px;
-      outline: 1px solid #c9c9c9;
-      position: absolute;
-      top: 1px;
-      left: 50%;
-      margin-left: -100px;
-      z-index: 100;
-      text-align: center;
-      background: #fff; }
-    </style>
-	
 </head>
 <body>
 <a href="#main-content" class="basic" onclick="$('#main-content').attr('tabIndex',-1).focus();"><span>Skip to main content</span></a>
 <a href="#nav" class="skip-nav-link skip-to-main">Skip To Main Navigation</a>
-    <header role="banner">
+    <header><!-- <header role="banner"> -->
         <div class="row">
             <div class="column column-6">
                 <h1>Responsive Template</h1>
                 <h2>With Accessibility Helpers</h2>
-            </div><!-- /column column-6 -->
+            </div><!-- /.column column-6 -->
             <div class="column column-6">
                 <nav id="nav" class="hide-on-print" role="navigation">
                     <ul class="nav">
@@ -352,11 +44,11 @@
                           <li class="terms"><a href="#terms" title="The Terms of Use">Terms of Use</a></li>
                           <li class="about"><a href="http://www.trudymessingham.co.uk/"><span class="readable">Visit Trudy&rsquo;s website</span>About Me</a></li>
                           <li class="contact"><a class="current" href="http://www.trudymessingham.co.uk/contact-me"><span class="readable">Contact Trudy</span>Contact Me</a></li>
-                    </ul>
+                    </ul><!-- /ul.nav -->
                 </nav>
 
-            </div><!-- /column column-6 -->
-        </div>
+            </div><!-- /.column column-6 -->
+        </div><!-- /.row -->
 
     </header>
 
@@ -376,35 +68,36 @@
                         <div class="row">
                             <div class="column column-12">
 							A basic responsive template for you to adapt. Complete with <abbr title="Accessible Rich Internet Applications">ARIA</abbr> and a handful of Accessibility helpers.
-							</div>
-                        </div>
+							</div><!-- /.column column-12 -->
+                        </div><!-- /.row -->
 						<div class="row">
                             <div class="column column-4">
 								<img src="http://www.trudymessingham.co.uk/what-kitties-pray-for/test-accessibility/768.jpg" width="200" alt="An image of a cute kitten" />
-							</div>
+							</div><!-- /.column column-4 -->
                             <div class="column column-4">
 								<img src="http://www.trudymessingham.co.uk/what-kitties-pray-for/test-accessibility/768.jpg" width="200" alt="Another image of a cute kitten" />
-							</div>
+							</div><!-- /.column column-4 -->
                             <div class="column column-4">
 								<img src="http://www.trudymessingham.co.uk/what-kitties-pray-for/test-accessibility/768.jpg" width="200" alt="And another image of a cute kitten" />
-							</div>
+							</div><!-- /.column column-4 -->
+                        </div><!-- /.row -->
+                        <div class="row">
+                            <div class="column column-4">Images by <a href="http://placekitten.com/" title="External link to place kittens dot com">placekitten</a>
+                            </div><!-- /.column column-4 -->
+                            <div class="column column-4"></div><!-- /.column column-4 -->
+                            <div class="column column-2"></div><!-- /.column column-2 -->
+                            <div class="column column-2"></div><!-- /.column column-2 -->
                         </div>
                         <div class="row">
-                            <div class="column column-4">Images by <a href="http://placekitten.com/" title="External link to place kittens dot com">placekitten</a></div>
-                            <div class="column column-4"></div>
-                            <div class="column column-2"></div>
-                            <div class="column column-2"></div>
-                        </div>
-                        <div class="row">
-                            <div class="column column-5"></div>
-                            <div class="column column-7"></div>
-                        </div>
+                            <div class="column column-5"></div><!-- /.column column-5 -->
+                            <div class="column column-7"></div><!-- /.column column-7 -->
+                        </div><!-- /.row -->
 
                     </article>
 
                 </section>
 
-            </div><!-- /column column-8 -->
+            </div><!-- /.column column-8 -->
 
             <div class="column column-4">
 
@@ -416,51 +109,83 @@
                         <div class="column column-4">
 						<h3>This Is A Fake Number</h3>
 						<a href="tel:02085555555"><span class="readable">A fake number for illustration only</span> 0208-555-5555</a>
-						</div>
+						</div><!-- /.column column-4 -->
                         <div class="column column-4">
 						<h3>Dummy Text</h3>
 						<a href="#" aria-label="Download something to your computer">Download Details</a>
-						</div>
+						</div><!-- /.column column-4 -->
                         <div class="column column-4">
 						<h3 id="lorem">Here&rsquo;s A Little Snippet</h3>
 						<a href="#snippit_in_full" aria-labelledby="lorem">Full Article</a>
-						</div>
-                    </div>
+						</div><!-- /.column column-4 -->
+                    </div><!-- /.row -->
                     <div class="row">
-                        <div class="column column-2"></div>
-                        <div class="column column-4"></div>
-                        <div class="column column-4"></div>
-                        <div class="column column-2"></div>
-                    </div>
+                        <div class="column column-2"></div><!-- /.column column-2 -->
+                        <div class="column column-4"></div><!-- /.column column-4 -->
+                        <div class="column column-4"></div><!-- /.column column-4 -->
+                        <div class="column column-2"></div><!-- /.column column-2 -->
+                    </div><!-- /.row -->
                     <div class="row">
-                        <div class="column column-5"></div>
-                        <div class="column column-7"></div>
-                    </div>
+                        <div class="column column-5"></div><!-- /.column column-5 -->
+                        <div class="column column-7"></div><!-- /.column column-7 -->
+                    </div><!-- /.row -->
 
                 </aside>
 
-            </div><!-- /column column-4 -->
-        </div><!-- /row -->
+            </div><!-- /.column column-4 -->
+        </div><!-- /.row -->
 
         <div id="terms" class="row">
             <div class="column column-12">
 			<h2>Terms of Use</h2>
             <h3>Free to use and adapt</h3>
-			</div>
-        </div>
+			</div><!-- /.column column-12 -->
+        </div><!-- /#terms .row -->
         <div class="row">
             <div id="snippit_in_full" class="column column-8">
 			<p><span class="opener">Lorem ipsum</span> dolor sit amet, vis no hinc honestatis, vim ei dicit viris repudiare. Ne magna consequat signiferumque sea. Vix movet voluptaria at. Ad viris intellegat quo, magna simul quidam vis at. Vis ea suas <a href="#">audiam utroque</a>, saepe perpetua per at. Ea eam euismod labores argumentum. Tota dictas deleniti qui an, no sit exerci apeirian facilisis.</p>
 			<p>Quem quaeque ut eum, quot ferri commune ex vix. Te usu nulla reprehendunt, his posse soluta intellegat at. Augue gloriatur voluptatum sit ut. Cu pro reque dicit accusamus, sit tota veniam dissentiet te. At usu congue iudico mentitum, soleat nonumes salutandi cu has.</p>
-			</div>
+			</div><!-- /.column column-8 -->
             <div class="column column-4">
 			<p>Pri partem iisque verterem ad. Pro numquam explicari an. Ex vix wisi aliquam, mea ullum zril petentium ad, pri te admodum eleifend elaboraret. Eu molestie singulis delicatissimi pro, eu suas omnesque laboramus sed.</p>
 			<p>Eam ea eleifend constituto, eos alienum tractatos id. Ad noster aliquid pri, pro <a href="#">aliquando deterruisset</a> ad. Sed ea aeterno sensibus tincidunt, equidem apeirian in his. Ad nostro intellegat nam, simul recusabo nam et.</p>
-			</div>
-        </div>
+			</div><!-- /.column column-8 -->
+        </div><!-- /.row -->
         <div class="row">
-            <div class="column column-1"></div>
-			<div class="column column-3"></div>
+            <div class="column column-12">
+            <h2>Responsive Tabs</h2>
+                <ul role="tablist" id="tabs">
+                    <li role="presentation"><a role="tab" aria-selected="true" aria-controls="home" id="homeTab" href="#home" class="tab selected">Home</a></li>
+                    <li role="presentation"><a role="tab" aria-selected="false" aria-controls="work" id="workTab" href="#work" class="tab" tabindex="-2">Work</a></li>
+                    <li role="presentation"><a role="tab" aria-selected="false" aria-controls="other" id="otherTab" href="#other" class="tab" tabindex="-2">Other</a></li>
+                </ul><!-- /#tabs -->
+
+                <div role="tabpanel" aria-labelledby="homeTab" id="home" class="tabcontent">
+                <fieldset>
+                    <legend><h3>Home</h3></legend>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ullam voluptas dolorum laboriosam saepe minus eaque architecto dolores, facilis magnam tempore nobis totam, earum incidunt veritatis voluptatum ab delectus perspiciatis.</p>
+                </fieldset>                        
+                </div><!-- /.tabcontent -->
+                
+                <div role="tabpanel" aria-labelledby="workTab" id="work" class="tabcontent hidden">
+                <fieldset>
+                    <legend><h3>Work</h3></legend>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ullam voluptas dolorum laboriosam saepe minus eaque architecto dolores, facilis magnam tempore nobis totam, earum incidunt veritatis voluptatum ab delectus perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ullam voluptas dolorum laboriosam saepe minus eaque architecto dolores, facilis magnam tempore nobis totam, earum incidunt veritatis voluptatum ab delectus perspiciatis.</p>
+                </fieldset>
+                </div><!-- /.tabcontent -->
+                
+                <div role="tabpanel" aria-labelledby="otherTab" id="other" class="tabcontent hidden">
+                <fieldset>
+                    <legend><h3>Other</h3></legend>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ullam voluptas dolorum laboriosam saepe minus eaque architecto dolores, facilis magnam tempore nobis totam, earum incidunt veritatis voluptatum ab delectus perspiciatis.</p>
+                </fieldset>
+                </div><!-- /.tabcontent -->
+            </div><!-- /.column column-12 -->
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="column column-1"></div><!-- /.column column-1 -->
+			<div class="column column-3"></div><!-- /.column column-3 -->
             <div id="download" class="column column-4">
 			<h3>A Dummy Download Group</h3>
 			<p><span id="report-title" tabindex="-1">2016 Sales Report</span>:<br />
@@ -468,64 +193,61 @@
             <a aria-labelledby="report-title doc" href="#download" id="doc">Word</a> |
             <a aria-labelledby="report-title ppt" href="#download" id="ppt">Powerpoint</a>
             </p>
-			</div>
-            <div class="column column-3"></div>
-            <div class="column column-1"></div>
-        </div>
+			</div><!-- /.column column-4 -->
+            <div class="column column-3"></div><!-- /.column column-3 -->
+            <div class="column column-1"></div><!-- /.column column-1 -->
+        </div><!-- /.row -->
         <div class="row">
-            <div class="column column-3"></div>
-            <div class="column column-3"></div>
-            <div class="column column-3"></div>
-            <div class="column column-3"></div>
-        </div>
+            <div class="column column-3"></div><!-- /.column column-3 -->
+            <div class="column column-3"></div><!-- /.column column-3 -->
+            <div class="column column-3"></div><!-- /.column column-3 -->
+            <div class="column column-3"></div><!-- /.column column-3 -->
+        </div><!-- /.row -->
         <div class="row">
-            <div class="column column-12"></div>
-        </div>
+            <div class="column column-12"></div><!-- /.column column-12 -->
+        </div><!-- /.row -->
 
         <div class="row">
             <div class="column column-6">
                 <div class="row">
-                    <div class="column column-6"></div>
-                    <div class="column column-6"></div>
-                </div>
+                    <div class="column column-6"></div><!-- /.column column-6 -->
+                    <div class="column column-6"></div><!-- /.column column-6 -->
+                </div><!-- /.row -->
                 <div class="row">
-                    <div class="column column-3"></div>
-                    <div class="column column-3"></div>
-                    <div class="column column-3"></div>
-                    <div class="column column-3"></div>
-                </div>
+                    <div class="column column-3"></div><!-- /.column column-3 -->
+                    <div class="column column-3"></div><!-- /.column column-3 -->
+                    <div class="column column-3"></div><!-- /.column column-3 -->
+                    <div class="column column-3"></div><!-- /.column column-3 -->
+                </div><!-- /.row -->
                 <div class="row">
-                    <div class="column column-4"></div>
-                    <div class="column column-4"></div>
-                    <div class="column column-4"></div>
-                </div>
-            </div>
+                    <div class="column column-4"></div><!-- /.column column-4 -->
+                    <div class="column column-4"></div><!-- /.column column-4 -->
+                    <div class="column column-4"></div><!-- /.column column-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.column column-6 -->
             <div class="column column-6">
                 <div class="row">
-                    <div class="column column-7"></div>
-                    <div class="column column-3"></div>
-                    <div class="column column-2"></div>
-                </div>
+                    <div class="column column-7"></div><!-- /.column column-7 -->
+                    <div class="column column-3"></div><!-- /.column column-3 -->
+                    <div class="column column-2"></div><!-- /.column column-2 -->
+                </div><!-- /.row -->
                 <div class="row">
-                    <div class="column column-2"></div>
-                    <div class="column column-2"></div>
-                    <div class="column column-4"></div>
-                    <div class="column column-2"></div>
-                    <div class="column column-2"></div>
-                </div>
+                    <div class="column column-2"></div><!-- /.column column-2 -->
+                    <div class="column column-2"></div><!-- /.column column-2 -->
+                    <div class="column column-4"></div><!-- /.column column-4 -->
+                    <div class="column column-2"></div><!-- /.column column-2 -->
+                    <div class="column column-2"></div><!-- /.column column-2 -->
+                </div><!-- /.row -->
                 <div class="row">
-                    <div class="column column-9"></div>
-                    <div class="column column-3"></div>
-                </div>
-            </div>
-        </div>
-		<div class="row">
-            <div class="column column-12"></div>
-        </div>
+                    <div class="column column-9"></div><!-- /.column column-9 -->
+                    <div class="column column-3"></div><!-- /.column column-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.column column-6 -->
+        </div><!-- /.row -->
 
     </main>
 
-    <footer role="contentinfo">
+    <footer><!-- <footer role="contentinfo"> -->
 
         <div class="row">
             <div class="column column-12">
@@ -533,19 +255,26 @@
                 <div class="row">
                     <div class="column column-4">Footer Left<br />
 					<i class="fa fa-html5"></i> HTML5 &nbsp; &amp; &nbsp; <i class="fa fa-css3"></i> CSS3
-					</div>
+					</div><!-- /.column column-4 -->
                     <div class="column column-4">Footer Middle<br />
-					<i class="fa fa-lightbulb-o"></i> For security reasons, please ensure your browser is the latest release.</p>
-					</div>
+					<i class="fa fa-lightbulb-o"></i> For security reasons, please ensure your browser is the latest release.
+					</div><!-- /.column column-4 -->
                     <div class="column column-4">Footer Right<br />
 					<a href="http://www.trudymessingham.co.uk/" class="social"><span class="readable">Visit Trudy&rsquo;s website</span><i class="fa fa-home"></i></a>&nbsp;<a href="https://uk.linkedin.com/in/trudymessingham" class="social"><span class="readable">Trudy&rsquo;s LinkedIn page</span><i class="fa fa-linkedin"></i></a>
-					</div>
-                </div>
+					</div><!-- /.column column-4 -->
+                </div><!-- /.row -->
 
-            </div>
-        </div>
+            </div><!-- /.column column-12 -->
+        </div><!-- /.row -->
 
     </footer>
+
+    
+
+<!-- ### DO NOT DELETE - REQUIRED FOR RESPONSIVE TABS ### -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">$(function(){var e=0,t=$("a.tab");t.bind({keydown:function(a){var n=a.which||a.keyCode;n>=37&&40>=n&&(37==n||38==n?e>0?e--:e=t.length-1:39!=n&&40!=n||(e<t.length-1?e++:e=0),$(t.get(e)).click(),a.preventDefault())},click:function(n){e=$.inArray(this,t.get()),a(),n.preventDefault()}});var a=function(){t.attr({tabindex:"-2","aria-selected":"false"}).removeClass("selected"),$(".tabcontent").addClass("hidden"),$(t.get(e)).attr({tabindex:"0","aria-selected":"true"}).addClass("selected").focus(),$($(t.get(e)).attr("href")).removeClass("hidden")}});</script>
+<!-- #################################################### -->
 
 </body>
 </html>
