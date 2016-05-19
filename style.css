@@ -1,5 +1,3 @@
-    <style>
-
     /*------------------------------*\
         Reset
     \*------------------------------*/
@@ -180,32 +178,32 @@
       font-size: 14px;
       text-align: center;
     }
-	p { 
-	  max-width: 600px;
-	  margin: 0 auto;  
-	  padding: 10px 30px;
-	  font-size: 1.2em;
-	  line-height: 120%;
-	  text-align:left;
-	  color: #464646;  
-	}
-	span.opener {
-	  font-weight:bold;
-	  font-size: 150%;
-	  display:inline-block;
-	  padding-top: 15px;
-	}
-	
-	a i {
+    p { 
+      max-width: 600px;
+      margin: 0 auto;  
+      padding: 10px 30px;
+      font-size: 1.2em;
+      line-height: 120%;
+      text-align:left;
+      color: #464646;  
+    }
+    span.opener {
+      font-weight:bold;
+      font-size: 150%;
+      display:inline-block;
+      padding-top: 15px;
+    }
+    
+    a i {
       font-size: 32px !important;
       margin: 10px; 
     }
-	
-	img { 
-	  margin: 0.5em auto 0 auto;
-	  height: auto;
-	}
-	
+    
+    img { 
+      margin: 0.5em auto 0 auto;
+      height: auto;
+    }
+    
 
     @media only screen and (max-width: 550px) {
         .row {
@@ -218,12 +216,12 @@
             margin-bottom: 0;
         }
     }
-	
+    
     /*------------------------------*\
         Accessibility Styles
-    \*------------------------------*/	
-	
-	/*Hidden from the eye, but accessible for screen-readers */
+    \*------------------------------*/  
+    
+    /*Hidden from the eye, but accessible for screen-readers */
   .readable {
     position: absolute;
     width: 1px;
@@ -234,30 +232,30 @@
     clip-path: rect(0, 0, 0, 0);
     border: 0; 
   } 
-	  
-	a {
-	  color: inherit;
+      
+    a {
+      color: inherit;
       min-height: 44px;
       min-width: 44px;
 
-	  }
-	  
-	a:hover {
-	  text-decoration:none;
-	  border-bottom:2px solid #ff0000;
-	}
-	  
-	/* NEVER EVER disable focus */
-	a:focus {
-	  border: 1px solid #0000ff;
-	  }
-	  
-	.basic {
+      }
+      
+    a:hover {
+      text-decoration:none;
+      border-bottom:2px solid #ff0000;
+    }
+      
+    /* NEVER EVER disable focus */
+    a:focus {
+      border: 1px solid #0000ff;
+      }
+      
+    .basic {
       display: block;
       position: absolute;
       top: -1000px;
       left: -1000px; 
-	}
+    }
   .basic:focus {
       top: 0;
       left: 0; 
@@ -332,7 +330,7 @@
             flex: 1;
     margin-right: 4px;
     padding: 12px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #ffffff;
     background-color: #6a6a6a;
     text-align: center;
@@ -381,4 +379,3 @@
   .hidden {
       display: none;
   }
-
